@@ -1,0 +1,22 @@
+[package]
+name = "yew-tutorial-app"
+version = "1.0.0"
+edition = "2021"
+license = "MIT"
+authors = ["Angel Dollface"]
+description= "A small tutorial app for Yew.rs."
+homepage = "https://github.com/angeldollface/yew-tutorial-app"
+repository = "https://github.com/angeldollface/yew-tutorial-app"
+documentation = "https://github.com/angeldollface/yew-tutorial-app"
+readme = "README.markdown"
+keywords = ["web-app"]
+categories = ["web-app"]
+exclude = ["/.github"]
+
+[dependencies]
+rand = "0.8.5"
+yew-hooks = "0.2.0"
+wasm-bindgen = "0.2.83"
+yew = { version = "0.20.0", features = ["csr"] }
+getrandom = { version = "0.2", features = ["js"] }
+web-sys = { version = "0.3.60", features = [ "HtmlInputElement" ] }
